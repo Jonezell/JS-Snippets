@@ -17,7 +17,10 @@ $(".lazyload").each(function(idx){
         var elemPos = windowHeight + scrollHeight - fromTop.toFixed(0);
 
         if (elemPos > 0){
-            $(elem).addClass('active');
+          $(elem).addClass('active');
+        } else {
+          $(elem).removeClass('active');
         };
+
     }
 });
